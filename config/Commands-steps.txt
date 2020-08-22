@@ -2,3 +2,21 @@
  init
 
 #1 --------------------------
+https://docs.spatie.be/laravel-permission/v3/installation-laravel/
+
+*****Installation  spatie in Laravel
+
+    This package can be used with Laravel 5.8 or higher.
+
+    Consult the Prerequisites page for important considerations regarding your User models!
+
+    This package publishes a config/permission.php file. If you already have a file by that name, you must rename or remove it.
+
+    You can install the package via composer:
+
+        $ composer require spatie/laravel-permission
+
+    --------------------------------------------------
+
+
+#2 --------------------------
