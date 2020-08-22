@@ -8,11 +8,11 @@ https://docs.spatie.be/laravel-permission/v3/installation-laravel/
 
     This package can be used with Laravel 5.8 or higher.
 
-    Consult the Prerequisites page for important considerations regarding your User models!
+    1- Consult the Prerequisites page for important considerations regarding your User models!
 
-    This package publishes a config/permission.php file. If you already have a file by that name, you must rename or remove it.
+    2- This package publishes a config/permission.php file. If you already have a file by that name, you must rename or remove it.
 
-    You can install the package via composer:
+    3- You can install the package via composer:
 
         $ composer require spatie/laravel-permission
 
@@ -20,3 +20,17 @@ https://docs.spatie.be/laravel-permission/v3/installation-laravel/
 
 
 #2 --------------------------
+
+    4- Optional: The service provider will automatically get registered. Or you may manually
+        add the service provider in your config/app.php file:
+
+        'providers' => [
+            // ...
+            Spatie\Permission\PermissionServiceProvider::class,
+        ];
+
+    5- You should publish the migration and the config/permission.php config file with:
+
+        php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+#3 --------------------------
